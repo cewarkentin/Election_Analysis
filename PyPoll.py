@@ -1,9 +1,9 @@
 # Goals:
-    # The total number of votes cast
-    # A complete list of candidates who received votes
-    # The percentage of votes each candidate won
-    # The total number of votes each candidate won
-    # The winner of the election based on popular vote
+    # A. The total number of votes cast
+    # B. A complete list of candidates who received votes
+    # C. The percentage of votes each candidate won
+    # D. The total number of votes each candidate won
+    # E. The winner of the election based on popular vote
 
 
 # import module for pulling data from external CSV files and perform operations on them
@@ -16,8 +16,11 @@ file_to_load = 'Resources\election_results (1).csv'
 # Assign a variable to save the file to a path.
 file_to_save = 'analysis\election_analysis.txt'
 
-# Initialize a total vote counter
+# A. Initialize a total vote counter
 total_votes = 0
+
+# B. Create a list to contain candidate names
+candidate_options = []
 
 # Open the election results and read the file.
 with open(file_to_load) as election_data:
@@ -28,8 +31,18 @@ with open(file_to_load) as election_data:
 
     # Print each row in the CSV file
     for row in file_reader:
-        # Add to the total vote count
+
+        # A. Add to the total vote count
         total_votes = total_votes + 1
+
+        # B. Find the candidate name from each row
+        candidate_name = row[2]
+
+        # B. Add the candidate name to the candidate list
+        candidate_options.append(candidate_name)
     
-    # Print the total votes
+    # A. Print the total votes
     print(total_votes)
+
+    # B. Print the candidate list.
+    print(candidate_options)
