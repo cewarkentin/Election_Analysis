@@ -23,6 +23,11 @@ county_options = []
 # X. Empty dictionary for county votes
 county_votes = {}
 
+# Z. Determine the county with the most votes
+top_voting_county = ""
+top_voting_county_count = 0
+top_voting_county_percentage = 0
+
 # Open the election results and read the file
 with open(file_to_load) as election_data:
     file_reader = csv.reader(election_data)
@@ -69,5 +74,22 @@ for county_name in county_votes:
     # Y. Calculate percentage of votes
     cvote_percentage = float(cvotes) / float(total_votes) * 100
 
-    # Y. Print the county name and percentage of votes.
-    print(f"{county_name} contained {cvote_percentage:.1f}% of the total voters.")
+    # Z. Determine the top voting county
+    # Z. Determine which county has the largest number of votes
+    if (cvotes > top_voting_county_count) and (cvote_percentage > top_voting_county_percentage):
+            # If true, set top_voting_county_count and top_voting_county_percentage
+            top_voting_county_count = cvotes
+            top_voting_county_percentage = cvote_percentage
+
+            # Set top voting county name
+            top_voting_county = county_name
+
+    # Print counties, percentages, and votes
+    print(f"{county_name}: {cvote_percentage:.1f}% ({cvotes:,})\n")
+
+    top_county_summary = (
+        f"-------------------------\n"
+        f"Largest County Turnout: {top_voting_county}\n"
+        f"-------------------------\n")
+    
+    print(top_county_summary)
