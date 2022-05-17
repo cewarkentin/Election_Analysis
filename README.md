@@ -44,3 +44,12 @@ Using a bulleted list, address the following election outcomes. Use images or ex
 
 In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
 
+Given that the incoming data is a CVS file of a similar format for data storage, this Python script is ready for use for future elections. With modification, this script can be used to analyze data in other file types or formatting. 
+
+The same logic can be used to analyze data for elections beyond just selecting a candidate--if there are ballot measures or other proposals, the output script can be adjusted to appropriately announce the winners for those votes as well.
+
+If an election is determined by something other than popular vote, the logic for determining a winner can be adjusted to appropriately select the winner according to whatever rules are required. To do so, all we would have to do is adjust the
+
+if (votes > winning_count) and (vote_percentage > winning_percentage):
+
+statement.
