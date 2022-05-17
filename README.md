@@ -1,4 +1,4 @@
-Election Analysis
+# Election Analysis
 
 ## Overview of Project
 
@@ -10,12 +10,12 @@ A Colorado Board of Elections employee has given us the following tasks to compl
 - Calculate the percentage of votes each candidate won.
 - Determine the winner of the election based on popular vote.
 
-## Resources
+### Resources
 
 - Data Source: election_results.csv
 - Software: Python 3.7.6, Visual Studio Code 1.67.1
 
-## Summary
+### Output Summary
 
 The analysis of the election shows:
 - There were "x" votes cast in the election.
