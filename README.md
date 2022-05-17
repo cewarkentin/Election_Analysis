@@ -32,13 +32,14 @@ The analysis of the election shows:
 
 ## Election Audit Results
 
-Using a bulleted list, address the following election outcomes. Use images or examples of your code as support where necessary.
+- There were 369,711 total votes cast in this congressional election.
+  - Charles Casper Stockham received 23.0% of the vote and 85,213 individual votes.
+  - Diana DeGette received 73.8% of the vote and 272,892 individual votes.
+  - Raymon Anthony Doane received 3.1% of the vote and 11,606 individual votes.
+- Diana DeGette won the congressional election with 73.8% of the vote and 272,892 individual votes.
 
-- How many votes were cast in this congressional election?
 - Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
 - Which county had the largest number of votes?
-- Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
-- Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 
 ## Election Audit Summary
 
