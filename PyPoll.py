@@ -123,6 +123,7 @@ with open(file_to_save, "w") as txt_file:
         
         # Print counties, percentages, and votes
         county_script = f"{county_name}: {cvote_percentage:.1f}% ({cvotes:,})\n"
+        print(county_script)
         txt_file.write(county_script)
         
         top_county_summary = (
@@ -158,6 +159,7 @@ with open(file_to_save, "w") as txt_file:
         candidate_results = f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n"
 
         #  Save the candidate results to our text file.
+        print(candidate_results)
         txt_file.write(candidate_results)
     
     # Print the winning candidate's results to the terminal.
