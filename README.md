@@ -38,10 +38,10 @@ The analysis of the election shows:
   - Charles Casper Stockham received 23.0% of the vote and 85,213 individual votes.
   - Diana DeGette received 73.8% of the vote and 272,892 individual votes.
   - Raymon Anthony Doane received 3.1% of the vote and 11,606 individual votes.
-- Diana DeGette won the congressional election with 73.8% of the vote and 272,892 individual votes.
+- Diana DeGette won the congressional election with 73.8% of the total vote and 272,892 individual votes.
 
-- Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
-- Which county had the largest number of votes?
+- Three counties contributed to the voting data used in analysis: Jefferson county, Denver county, and Arapahoe county. Of the three counties, Denver contributed 82% of the total votes, more than the other two counties. Jefferson county contributed 10.5% of the total votes and Arapahoe contributed 6.7% of the total votes.
+- Denver county had the highest voter turnout.
 
 ## Election Audit Summary
 
