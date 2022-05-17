@@ -32,6 +32,8 @@ The analysis of the election shows:
 
 ## Election Audit Results
 
+![Candidate_results](https://github.com/cewarkentin/Election_Analysis/blob/main/Candidate%20results.png)
+
 - There were 369,711 total votes cast in this congressional election.
   - Charles Casper Stockham received 23.0% of the vote and 85,213 individual votes.
   - Diana DeGette received 73.8% of the vote and 272,892 individual votes.
